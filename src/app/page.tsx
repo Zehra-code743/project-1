@@ -8,6 +8,7 @@ const About = () => {
       <section className="section">
         <div className="container">
           {/* About Me Section */}
+          {/* hello */}
           <div className="about-content">
             <div className="profile-info">
               <img
