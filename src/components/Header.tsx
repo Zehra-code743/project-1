@@ -1,20 +1,64 @@
-import Link from 'next/link';
+"use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import styles from './Header-section.module.css';
 
-export default function Header() {
+const Header = () => {
   return (
-    <header>
-      <div className="container">
-        <h1>My Portfolio</h1>
+    <header className="header">
+      <div className="container mx-auto flex items-center justify-between">
+        <div className="logo-container">
+          {/* Logo */}
+          <Link href="/">
+            <Image
+              src="/profile picture.jpg" 
+              alt="Logo"
+              width={120}
+              height={40}
+              className="object-contain"
+            />
+          </Link>
+        </div>
+
+        {/* Navigation Links */}
         <nav>
-          <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="about-us">About</Link></li>
-            <li><Link href="/skills">Skills</Link></li>
-            <li><Link href="/jobs">Experience</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+          <ul className="nav-list">
+            <li>
+              <Link href="/" className="nav-link">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/About" className="nav-link">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/Acheivement" className="nav-link">
+                Achievement
+              </Link>
+            </li>
+            <li>
+              <Link href="/Project" className="nav-link">
+                Project
+              </Link>
+            </li>
+            <li>
+              <Link href="/Skill" className="nav-link">
+                Skill
+              </Link>
+            </li>
+            <li>
+              <Link href="/Contact" className="nav-link">
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
   );
-}
+};
+
+export default Header;
