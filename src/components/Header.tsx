@@ -50,7 +50,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/Contact" className="nav-link">
+              <Link href="/contact" className="nav-link">
                 Contact
               </Link>
             </li>
