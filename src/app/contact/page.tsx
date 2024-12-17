@@ -1,11 +1,13 @@
-import About from "@/components/About";
+import Contact from "@/components/Contact";
 import React from "react";
-
 
 const Page = () => {
   return (
     <div className="page-container">
-      <About />
+      {/* Optionally, wrap the Contact component in a styled container */}
+      <div className="contact-container">
+        <Contact />
+      </div>
     </div>
   );
 };

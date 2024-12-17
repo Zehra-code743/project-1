@@ -1,11 +1,13 @@
-import About from "@/components/About";
+import Project from "@/components/Project";
 import React from "react";
-
 
 const Page = () => {
   return (
     <div className="page-container">
-      <About />
+      {/* Optionally wrap the Acheivement component */}
+      <div className="achievement-container">
+        <Project />
+      </div>
     </div>
   );
 };
